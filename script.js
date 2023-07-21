@@ -9,10 +9,10 @@ function threeSum(arr, target) {
 
 		let left=i+1, right=arr.length-1;
 		
-		let currentSum=arr[i]+arr[left]+arr[right];
-
 		while(left<right){
-
+			
+			let currentSum=arr[i]+arr[left]+arr[right];
+			
 			if(Math.abs(currentSum-target)<Math.abs(closestSum-target)){
 
 				closestSum=currentSum;
